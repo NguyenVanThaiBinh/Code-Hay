@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      
+    <script>
+      function myFunction() {
+        
+
+        var dayin = document.getElementById("checkin").value;
+        var dayout = document.getElementById("checkout").value;
+
+        var d1 = new Date(dayin);
+        var d2 = new Date(dayout);
+
+        let day =(d2 - d1) / 1000 / 60 / 60 / 24;
+        document.getElementById("cash").innerHTML=day;
+      } 
+    </srcipt>
+
+  
+
+
+<!-- // function myFunction() {
+//     var DateDiff = {
+//       inDays: function (d1, d2) {
+//         var t2 = d2.getTime();
+//         var t1 = d1.getTime();
+
+//         return parseInt((t2 - t1) / (24 * 3600 * 1000));
+//       },
+//     };
+
+//     var dayin = document.getElementById("checkin").value;
+//     var dayout = document.getElementById("checkout").value;
+
+//     var d1 = new Date(dayin);
+//     var d2 = new Date(dayout);
+
+//     document.write(
+//       "<br />Number of <b>days</b> since " +
+//         dayin +
+//         ": " +
+//         DateDiff.inDays(d1, d2)
+//     ); -->
+</body>
+</html>

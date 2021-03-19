@@ -1,0 +1,1 @@
+var newarray = array.slice().reverse();
